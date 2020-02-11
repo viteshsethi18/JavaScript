@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>My title</title>
+    <script  type="text/javascript">
+ function changeStyling()
+ {
+     var element = document.getElementsByClassName("mypara");
+     for(var x=0;x<element.length;x++)
+     {
+         element[x].style.color="blue"
+     }
+ }
+    </script>
+</head>
+<body>
+<p class="mypara">this is a paragraph</p>
+<p>this is paragraph</p>
+<p class="mypara">this is a paragraph</p>
+<p>this is a paragraph</p>
+<p class="mypara">this is a paragraph</p>
+<br>
+<button onclick="changeStyling()">click me</button>
+</body>
+</html>

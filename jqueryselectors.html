@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> Jquery Selectors</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+       
+        <div id="firstdiv" class="mydivs">
+            <p>this is first paragraph in first divison</p>
+            <p>this is second paragraph in first divison</p>
+
+        </div>
+        <div id="seconddiv" class="mydivs">
+
+            <p>this is third para in second division</p>
+        </div>
+        <div id="thirddiv" class="mydivs">
+            <ul>
+            <li> list item 1</li>
+            <li> list item 2</li>
+            <li> list item 3</li>
+            <li> list item 4</li>
+            </ul>
+        </div>
+        <button onclick="fn1()" id="btn1">Click</button>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+
+                $("button").click(fn1);
+            function fn1()
+            {
+                $("#firstdiv,#seconddiv").fadeToggle();
+            }
+            });
+            
+        </script>
+    </body>
+
+</html>
